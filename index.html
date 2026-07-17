@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pendaftaran Ekstrakurikuler E-Sport</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#0f172a,#1e293b,#2563eb);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+.container{
+    background:white;
+    width:100%;
+    max-width:700px;
+    border-radius:15px;
+    padding:30px;
+    box-shadow:0 10px 30px rgba(0,0,0,.3);
+}
+
+h1{
+    text-align:center;
+    color:#2563eb;
+}
+
+p{
+    text-align:center;
+    margin-bottom:25px;
+}
+
+label{
+    font-weight:bold;
+    display:block;
+    margin-top:15px;
+}
+
+input,select,textarea{
+    width:100%;
+    padding:12px;
+    margin-top:6px;
+    border:1px solid #bbb;
+    border-radius:8px;
+    font-size:15px;
+}
+
+textarea{
+    resize:vertical;
+    min-height:120px;
+}
+
+button{
+    width:100%;
+    margin-top:25px;
+    padding:15px;
+    background:#2563eb;
+    color:white;
+    border:none;
+    border-radius:8px;
+    font-size:18px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#1d4ed8;
+}
+
+.footer{
+    text-align:center;
+    margin-top:20px;
+    color:#666;
+    font-size:14px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🎮 Pendaftaran Ekstrakurikuler E-Sport</h1>
+
+<p>Silakan isi formulir di bawah ini dengan data yang benar.</p>
+
+<form onsubmit="daftar(event)">
+
+<label>Nama Lengkap</label>
+<input type="text" required>
+
+<label>Kelas</label>
+<select required>
+<option value="">--Pilih Kelas--</option>
+<option>X</option>
+<option>XI</option>
+<option>XII</option>
+</select>
+
+<label>Jurusan</label>
+<input type="text" required>
+
+<label>Nomor WhatsApp</label>
+<input type="tel" required>
+
+<label>Email (Opsional)</label>
+<input type="email">
+
+<label>Username Game Utama</label>
+<input type="text">
+
+<label>Game yang Sering Dimainkan</label>
+<select required>
+<option value="">--Pilih--</option>
+<option>Mobile Legends</option>
+<option>PUBG Mobile</option>
+<option>Free Fire</option>
+<option>Honor of Kings</option>
+<option>Valorant</option>
+<option>EA FC</option>
+<option>Lainnya</option>
+</select>
+
+<label>Rank Saat Ini</label>
+<input type="text">
+
+<label>Posisi/Favorite Role</label>
+<input type="text">
+
+<label>Apakah Pernah Mengikuti Turnamen?</label>
+<select required>
+<option>Belum Pernah</option>
+<option>Pernah</option>
+</select>
+
+<label>Prestasi (Jika Ada)</label>
+<textarea></textarea>
+
+<label>Alasan Ingin Masuk Ekstrakurikuler E-Sport</label>
+<textarea required placeholder="Tuliskan alasan kamu ingin bergabung..."></textarea>
+
+<label>Apa Targetmu Jika Diterima?</label>
+<textarea required></textarea>
+
+<label>Apakah Bersedia Mengikuti Latihan Rutin?</label>
+<select required>
+<option>Ya</option>
+<option>Tidak</option>
+</select>
+
+<button type="submit">
+Daftar Sekarang
+</button>
+
+</form>
+
+<div class="footer">
+© 2026 Ekstrakurikuler E-Sport Sekolah
+</div>
+
+</div>
+
+<script>
+function daftar(e){
+e.preventDefault();
+
+alert("🎉 Pendaftaran berhasil dikirim!\n\nTerima kasih telah mendaftar di Ekstrakurikuler E-Sport.");
+
+}
+</script>
+
+</body>
+</html>
