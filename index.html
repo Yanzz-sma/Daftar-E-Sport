@@ -193,10 +193,13 @@ function daftar(e){
         bersedia: form.bersedia.value
     };
 
-    fetch("https://script.google.com/macros/s/AKfycbznSTCls3ObJZU8yP2qNs6IWKjFKByUqDPr3T4wZI0rr1w6l4FrlJKslpFvHSZObx0P/exec",{
-        method:"POST",
-        body:JSON.stringify(data)
-    })
+    fetch("https://script.google.com/macros/s/AKfycbyElxtoofr61XB0nN4V9yreyZpnbLiM8AeE67nImZ4MIC5iL5esDe4in5w6yPJb38TP/exec",{
+    method:"POST",
+    headers:{
+        "Content-Type":"application/json"
+    },
+    body:JSON.stringify(data)
+})
     .then(res=>res.text())
     .then(()=>{
         alert("🎉 Pendaftaran berhasil!");
