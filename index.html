@@ -97,10 +97,10 @@ button:hover{
 <form onsubmit="daftar(event)">
 
 <label>Nama Lengkap</label>
-<input type="text" required>
+<input type="text" name="nama" required>
 
 <label>Kelas</label>
-<select required>
+<select name="kelas" required>
 <option value="">--Pilih Kelas--</option>
 <option>X</option>
 <option>XI</option>
@@ -108,19 +108,19 @@ button:hover{
 </select>
 
 <label>Jurusan</label>
-<input type="text" required>
+<input type="text" name="jurusan" required>
 
 <label>Nomor WhatsApp</label>
-<input type="tel" required>
+<input type="tel" name="whatsapp" required>
 
 <label>Email (Opsional)</label>
-<input type="email">
+<input type="email" name="email">
 
 <label>Username Game Utama</label>
-<input type="text">
+<input type="text" name="username">
 
 <label>Game yang Sering Dimainkan</label>
-<select required>
+<select name="game" required>
 <option value="">--Pilih--</option>
 <option>Mobile Legends</option>
 <option>PUBG Mobile</option>
@@ -132,28 +132,28 @@ button:hover{
 </select>
 
 <label>Rank Saat Ini</label>
-<input type="text">
+<input type="text" name="rank">
 
 <label>Posisi/Favorite Role</label>
-<input type="text">
+<input type="text" name="role">
 
 <label>Apakah Pernah Mengikuti Turnamen?</label>
-<select required>
+<select name="turnamen" required>
 <option>Belum Pernah</option>
 <option>Pernah</option>
 </select>
 
 <label>Prestasi (Jika Ada)</label>
-<textarea></textarea>
+<textarea name="prestasi"></textarea>
 
 <label>Alasan Ingin Masuk Ekstrakurikuler E-Sport</label>
-<textarea required placeholder="Tuliskan alasan kamu ingin bergabung..."></textarea>
+<textarea name="alasan" required placeholder="Tuliskan alasan kamu ingin bergabung..."></textarea>
 
 <label>Apa Targetmu Jika Diterima?</label>
-<textarea required></textarea>
+<textarea name="target" required></textarea>
 
 <label>Apakah Bersedia Mengikuti Latihan Rutin?</label>
-<select required>
+<select name="bersedia" required>
 <option>Ya</option>
 <option>Tidak</option>
 </select>
