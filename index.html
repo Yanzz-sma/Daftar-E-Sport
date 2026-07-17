@@ -172,11 +172,40 @@ Daftar Sekarang
 
 <script>
 function daftar(e){
-e.preventDefault();
+    e.preventDefault();
 
-alert("🎉 Pendaftaran berhasil dikirim!\n\nTerima kasih telah mendaftar di Ekstrakurikuler E-Sport.");
+    const form = e.target;
 
-}
+    const data = {
+        nama: form.nama.value,
+        kelas: form.kelas.value,
+        jurusan: form.jurusan.value,
+        whatsapp: form.whatsapp.value,
+        email: form.email.value,
+        username: form.username.value,
+        game: form.game.value,
+        rank: form.rank.value,
+        role: form.role.value,
+        turnamen: form.turnamen.value,
+        prestasi: form.prestasi.value,
+        alasan: form.alasan.value,
+        target: form.target.value,
+        bersedia: form.bersedia.value
+    };
+
+    fetch("https://script.google.com/macros/s/AKfycbznSTCls3ObJZU8yP2qNs6IWKjFKByUqDPr3T4wZI0rr1w6l4FrlJKslpFvHSZObx0P/exec",{
+        method:"POST",
+        body:JSON.stringify(data)
+    })
+    .then(res=>res.text())
+    .then(()=>{
+        alert("🎉 Pendaftaran berhasil!");
+        form.reset();
+    })
+    .catch(()=>{
+        alert("❌ Gagal mengirim data.");
+    });
+    }
 </script>
 
 </body>
